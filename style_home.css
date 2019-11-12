@@ -5,48 +5,62 @@ html{
     padding-left: 10em;
     padding-right: 10em;
 }
-body{
-    background-color: rgba(0, 0, 0, 0.884);
-    box-shadow: 10px 10px 100px black,
-                -10px 10px 100px black;
-}
 nav{
     background-color: aqua;
+    border-radius: 105px;
+    margin-top: .5%;
 }
 nav ul{
     display: -webkit-flex-box;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-
+    -webkit-flex: 1 1 130px;
+      flex: 1 1 130px;
 }
  nav ul li{
     display: block;
-    padding: 5px;
+    padding: 1%;
     margin-right: auto;
     margin-left: auto;
 }
+nav a{
+    color: black;
+}
+nav a:hover, nav a:active{
+    text-shadow: 10px 0px 20px rgb(26, 0, 121),
+                -10px 0px 20px rgb(26, 0, 121); 
+    border-radius: 105px;
+}
+
 h1{
     font-size: 40px;
-    padding-top: 10%;
-    padding-left: 10%;
+    padding: 5%;
     color: rgb(5, 238, 255);
     width: 50%;
     background-color: rgb(78, 78, 78);
     border-radius: 105px;
+    line-height: 1.5em;
 }
 section{
     display: -webkit-flex-box;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    margin-top: 13px;
     padding-top: 12%;
-    padding-bottom: 17%;
+    padding-bottom: 15%;
     padding-left: 40px;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 55px;
+    box-shadow: 10px 0px 10px gray,
+                -10px 0px 10px gray;
 }
 img{
     float: right;
     padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
