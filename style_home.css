@@ -1,7 +1,19 @@
 @charset "utf-8";
 
+@font-face{
+    font-family: Nav;
+    src: url(Raleway-light.ttf) format('truetype'),
+    url(Raleway-light.ttf) format('woff'),
+    url(Raleway-light.ttf) format('woff2');
+}
+@font-face{
+    font-family: Other;
+    src: url(Raleway-SemiBold.ttf) format('truetype'),
+    url(Raleway-SemiBold.ttf) format('woff'),
+    url(Raleway-SemiBold.ttf) format('woff2');
+}
 html{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(248, 248, 248);
     padding-left: 10em;
     padding-right: 10em;
 }
@@ -9,6 +21,7 @@ nav{
     background-color: aqua;
     border-radius: 105px;
     margin-top: .5%;
+    font-family: Nav;
 }
 nav ul{
     display: -webkit-flex-box;
@@ -32,15 +45,25 @@ nav a:hover, nav a:active{
                 -10px 0px 20px rgb(26, 0, 121); 
     border-radius: 105px;
 }
-
+section{
+    letter-spacing: 2px;
+}
 h1{
     font-size: 40px;
     padding: 5%;
     color: rgb(5, 238, 255);
-    width: 50%;
+    width: fit-content;
     background-color: rgb(78, 78, 78);
     border-radius: 105px;
     line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: rgb(5, 238, 255);
+}
+h1>a:hover, p>a:active{
+    background-color: gray;
+    border-radius: 55px;
 }
 section{
     display: -webkit-flex-box;
@@ -55,12 +78,14 @@ section{
     border-radius: 55px;
     box-shadow: 10px 0px 10px gray,
                 -10px 0px 10px gray;
+    font-family: Other;
 }
 img{
     float: right;
     padding-left: 40px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: white;
 }
 
 

@@ -1,15 +1,30 @@
 @charset "utf-8";
 
+@font-face{
+    font-family: Nav;
+    src: url(Raleway-light.ttf) format('truetype'),
+    url(Raleway-light.ttf) format('woff'),
+    url(Raleway-light.ttf) format('woff2');
+}
+@font-face{
+    font-family: Other;
+    src: url(Raleway-SemiBold.ttf) format('truetype'),
+    url(Raleway-SemiBold.ttf) format('woff'),
+    url(Raleway-SemiBold.ttf) format('woff2');
+}
 html{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(248, 248, 248);
     padding-left: 10em;
     padding-right: 10em;
 }
-
+section{
+    letter-spacing: 2px;
+}
 nav{
     background-color: aqua;
     border-radius: 105px;
     margin-top: .5%;
+    font-family: Nav;
 }
 nav ul{
     display: -webkit-flex-box;
@@ -37,15 +52,22 @@ section.second{
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    padding-top: 8%;
+    padding-top: 6%;
     padding-bottom: 8%;
     padding-left: 40px;
     background-color: rgba(0, 0, 0, 0.884);
     border-radius: 55px;
+    box-shadow: 10px 0px 10px gray,
+                -10px 0px 10px gray;
+    font-family: Other;
+    /*border-radius: 0px 0px 55px 55px;*/
 }
 section.top{
-    padding-top: 1%;
+    padding-top: 1.5%;
     padding-bottom: 2%;
+    /*margin-top: 1%;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 55px 55px 0px 0px;*/
 }
 h1{
     display: block;
@@ -61,15 +83,21 @@ h1{
 }
 p{
     font-size: 32px;
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     color: rgb(5, 238, 255);
-    width: 50%;
+    width: fit-content;
+    height: fit-content;
     background-color: rgb(78, 78, 78);
     border-radius: 105px;
     line-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 p>a{
-    color: aqua;
+    color: rgb(5, 238, 255);
     text-decoration: none;
 }
 p>a:hover, p>a:active{

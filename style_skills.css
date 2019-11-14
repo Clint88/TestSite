@@ -1,7 +1,19 @@
 @charset "utf-8";
 
+@font-face{
+    font-family: Nav;
+    src: url(Raleway-light.ttf) format('truetype'),
+    url(Raleway-light.ttf) format('woff'),
+    url(Raleway-light.ttf) format('woff2');
+}
+@font-face{
+    font-family: Other;
+    src: url(Raleway-SemiBold.ttf) format('truetype'),
+    url(Raleway-SemiBold.ttf) format('woff'),
+    url(Raleway-SemiBold.ttf) format('woff2');
+}
 html{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(248, 248, 248);
     padding-left: 10em;
     padding-right: 10em;
 }
@@ -10,6 +22,7 @@ nav{
     background-color: aqua;
     border-radius: 105px;
     margin-top: .5%;
+    font-family: Nav;
 }
 nav ul{
     display: -webkit-flex-box;
@@ -31,15 +44,23 @@ nav a:hover, nav a:active{
                 -10px 0px 20px rgb(26, 0, 121); 
     border-radius: 105px;
 }
-
+section{
+    letter-spacing: 2px;
+}
 p{
-    font-size: 15px;
-    padding: 5%;
+    font-size: 17px;
     color: rgb(5, 238, 255);
-    width: 35%;
+    width: fit-content;
     background-color: rgb(78, 78, 78);
-    border-radius: 105px;
     line-height: 1.5em;
+}
+p.left{
+    border-radius: 105px 0px 0px 105px ;
+    padding: 5% 1% 5% 5%;
+}
+p.right{
+    border-radius: 0px 105px 105px 0px ;
+    padding: 5% 5% 5% 1%;
 }
 
 section.second{
@@ -52,9 +73,12 @@ section.second{
     padding-left: 40px;
     background-color: rgba(0, 0, 0, 0.884);
     border-radius: 55px;
+    box-shadow: 10px 0px 10px gray,
+                -10px 0px 10px gray;
+    font-family: Other;
 }
 section.top{
-    padding-top: 1%;
+    padding-top: 1.5%;
     padding-bottom: 2%;
 }
 h1{
@@ -68,6 +92,13 @@ h1{
     padding-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
+}
+p>a{
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+}
+p>a:hover, p>a:active{
+    background-color: gray;
 }
 img{
     margin-left: auto;
