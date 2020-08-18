@@ -17,13 +17,13 @@ html{
     padding-left: 10em;
     padding-right: 10em;
 }
-nav{
+div.row-1-1{
     background-color: aqua;
     border-radius: 105px;
     margin-top: .5%;
     font-family: Nav;
 }
-nav ul{
+div.row-1-1 ul{
     display: -webkit-flex-box;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -31,22 +31,19 @@ nav ul{
     -webkit-flex: 1 1 130px;
       flex: 1 1 130px;
 }
- nav ul li{
+div.row-1-1 ul li{
     display: block;
     padding: 1%;
     margin-right: auto;
     margin-left: auto;
 }
-nav a{
+div.row-1-1 a{
     color: black;
 }
-nav a:hover, nav a:active{
+div.row-1-1 a:hover, div.row-1-1 a:active{
     text-shadow: 10px 0px 20px rgb(26, 0, 121),
                 -10px 0px 20px rgb(26, 0, 121); 
     border-radius: 105px;
-}
-section{
-    letter-spacing: 2px;
 }
 h1{
     font-size: 40px;
@@ -65,7 +62,7 @@ h1>a:hover, p>a:active{
     background-color: gray;
     border-radius: 55px;
 }
-section{
+div.row-1-2{
     display: -webkit-flex-box;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -79,13 +76,22 @@ section{
     box-shadow: 10px 0px 10px gray,
                 -10px 0px 10px gray;
     font-family: Other;
+    letter-spacing: 2px;
 }
 img{
     float: right;
     padding-left: 40px;
-    margin-left: auto;
     margin-right: auto;
     text-shadow: white;
 }
-
-
+p{
+    padding-left: 60px;
+}
+img#logo:hover{
+    transition: 1.5s;
+    transform: rotate(360deg);
+}
+img#logo{
+    transition: 1.5s;
+    transform: rotate(0deg);
+}

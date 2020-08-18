@@ -45,36 +45,6 @@ nav a:hover, nav a:active{
     border-radius: 105px;
 }
 
-p{
-    font-size: 30px;
-    padding: 2%;
-    color: rgb(5, 238, 255);
-    width: 96%;
-    background-color: rgb(78, 78, 78);
-    border-radius: 105px;
-    line-height: 1.5em;
-}
-section{
-    letter-spacing: 2px;
-}
-section.second{
-    display: -webkit-flex-box;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    box-shadow: 10px 0px 10px gray,
-                -10px 0px 10px gray;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    padding-left: 40px;
-    background-color: rgba(0, 0, 0, 0.884);
-    border-radius: 55px;
-    font-family: Other;
-}
-section.top{
-    padding-top: 1.5%;
-    padding-bottom: 2%;
-}
 h1{
     display: block;
     text-align: center;
@@ -87,7 +57,54 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+
+section{
+    letter-spacing: 2px;
+}
+section.second{
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 40px;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 55px;
+    box-shadow: 10px 0px 10px gray,
+                -10px 0px 10px gray;
+    font-family: Other;
+}
+section.top{
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+}
+p{
+    font-size: 30px;
+    padding: 4.8%;
+    color: rgb(5, 238, 255);
+    width: 50%;
+    background-color: rgb(78, 78, 78);
+    border-radius: 105px;
+    line-height: 1.5em;
+}
+p>a{
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+}
+p>a:hover, p>a:active{
+    background-color: gray;
+}
 img{
-    margin-left: auto;
+    margin-left: 70px;
     margin-right: auto;
+}
+
+img#pieology_logo:hover{
+    transition: 1.5s;
+    transform: rotate(360deg);
+}
+img#pieology_logo{
+    transition: 1.5s;
+    transform: rotate(0deg);
 }

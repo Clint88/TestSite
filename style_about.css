@@ -44,6 +44,19 @@ nav a:hover, nav a:active{
                 -10px 0px 20px rgb(26, 0, 121);
     border-radius: 105px;
 }
+
+h1{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 105px;
+    background-color: gray;
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
 section{
     letter-spacing: 2px;
 }
@@ -64,18 +77,6 @@ section.second{
 section.top{
     padding-top: 1.5%;
     padding-bottom: 2%;
-}
-h1{
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    border-radius: 105px;
-    background-color: gray;
-    width: 20%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-left: auto;
-    margin-right: auto;
 }
 p{
     font-size: 30px;
