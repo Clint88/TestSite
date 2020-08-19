@@ -17,6 +17,8 @@ html{
     padding-left: 10em;
     padding-right: 10em;
 }
+
+/* Nav bar */
 div.row-1-1{
     background-color: aqua;
     border-radius: 105px;
@@ -45,6 +47,7 @@ div.row-1-1 a:hover, div.row-1-1 a:active{
                 -10px 0px 20px rgb(26, 0, 121); 
     border-radius: 105px;
 }
+
 h1{
     font-size: 40px;
     padding: 5%;
