@@ -102,4 +102,13 @@ p>a:hover, p>a:active{
 img{
     margin-left: auto;
     margin-right: auto;
+    border-radius: 105px;
+    padding: 1% ;
+    transform: rotateY(0deg) 6s;
+    transition: 6s;
 }
+img:hover{
+    transform: rotateY(360deg);
+    transition: 5s;
+}
+
