@@ -54,13 +54,14 @@ div#section{
     letter-spacing: 2px;
 }
 p{
-    font-size: 40px;
-    padding: 2%;
+    font-size: 50px;
+    padding: 4.8%;
     color: rgb(5, 238, 255);
-    width: 95%;
+    width: 50%;
     background-color: rgb(78, 78, 78);
     border-radius: 105px;
     line-height: 1.5em;
+    text-align: center;
 }
 
 div.row-1-3{
@@ -96,4 +97,20 @@ h1{
 img{
     margin-left: auto;
     margin-right: auto;
+}
+p>a{
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+}
+p>a:hover, p>a:active{
+    background-color: gray;
+}
+img{
+    margin-left: 70px;
+    margin-right: auto;
+
+}
+a.pic:hover{
+    transform: rotateX(360deg);
+    transition: 5s;
 }
